@@ -1,8 +1,19 @@
 function isPalindrome(word) {
+
+  let Word = word
+  let reversedWord = Word.split('').reverse().join('')
+  if(reversedWord === word) return true;
+
+  return false;
+
   // Write your algorithm here
 }
 
 /* 
+  We want to take a word and reverse it
+  Check to see if the revered word is the same as the word
+  return true if it matches
+  return false if it does not
   Add your pseudocode here
 */
 
@@ -23,3 +34,10 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
+/*
+
+
+
+*/
